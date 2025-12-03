@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TaskNest – Advanced To-Do App Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="TaskNest is a modern to-do app that lets you categorize tasks, set priorities and due dates, filter, search, and track your progress across devices."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">TaskNest</a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#hero">Demo</a>
+      </nav>
+
+      <button
+        type="button"
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Toggle dark mode"
+      >
+        ◑
+      </button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero + App -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">PRODUCTIVITY · TO-DO APP</p>
+          <h1>Stay on top of your day<br />with TaskNest</h1>
+          <p class="hero-subtitle">
+            Add tasks with categories, priorities, and due dates. Filter, sort,
+            search, and track your progress — all from a clean, responsive
+            interface.
+          </p>
+          <ul class="hero-points">
+            <li>Advanced but beginner-friendly UI</li>
+            <li>Filters, search, sort &amp; live stats</li>
+            <li>Tasks saved locally with zero backend</li>
+          </ul>
+        </div>
+
+        <!-- App Card -->
+        <div class="hero-card" aria-label="TaskNest app demo">
+          <div class="hero-card-header">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="hero-card-body">
+            <h2 class="hero-card-title">Today’s tasks</h2>
+
+            <!-- Create task -->
+            <form id="todo-form" class="todo-form">
+              <input
+                id="task-input"
+                type="text"
+                placeholder="Task title…"
+                autocomplete="off"
+                required
+              />
+              <div class="todo-form-row">
+                <select id="category-select">
+                  <option value="work">Work</option>
+                  <option value="personal">Personal</option>
+                  <option value="study" selected>Study</option>
+                  <option value="other">Other</option>
+                </select>
+
+                <select id="priority-select">
+                  <option value="low">Low</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="high">High</option>
+                </select>
+
+                <input
+                  id="due-date"
+                  type="date"
+                  aria-label="Due date (optional)"
+                />
+
+                <button type="submit" class="btn primary">Add</button>
+              </div>
+            </form>
+
+            <!-- Controls: search + filters + sort -->
+            <div class="controls-row">
+              <div class="search-wrapper">
+                <input
+                  id="search-input"
+                  type="text"
+                  placeholder="Search tasks…"
+                  aria-label="Search tasks"
+                />
+              </div>
+
+              <div class="filters">
+                <button
+                  type="button"
+                  class="filter-pill active"
+                  data-filter="all"
+                >
+                  All
+                </button>
+                <button
+                  type="button"
+                  class="filter-pill"
+                  data-filter="active"
+                >
+                  Active
+                </button>
+                <button
+                  type="button"
+                  class="filter-pill"
+                  data-filter="completed"
+                >
+                  Completed
+                </button>
+              </div>
+
+              <div class="sort-wrapper">
+                <label for="sort-select" class="sort-label">Sort</label>
+                <select id="sort-select">
+                  <option value="created-desc">Newest</option>
+                  <option value="created-asc">Oldest</option>
+                  <option value="due-asc">Due date</option>
+                  <option value="priority-desc">Priority</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Empty state -->
+            <p id="todo-empty" class="todo-empty">
+              No tasks yet. Add one to get started.
+            </p>
+
+            <!-- List -->
+            <ul id="task-list" class="task-list" aria-label="Task list"></ul>
+
+            <!-- Stats + clear -->
+            <div class="stats-row">
+              <div class="stat-chip">
+                <span class="stat-label">Total</span>
+                <span id="stat-total" class="stat-value">0</span>
+              </div>
+              <div class="stat-chip">
+                <span class="stat-label">Completed</span>
+                <span id="stat-completed" class="stat-value">0%</span>
+              </div>
+              <div class="stat-chip">
+                <span class="stat-label">Due today</span>
+                <span id="stat-today" class="stat-value">0</span>
+              </div>
+              <button
+                type="button"
+                id="clear-completed"
+                class="btn ghost small"
+              >
+                Clear completed
+              </button>
+            </div>
+
+            <p class="demo-note">
+              All data is stored locally in your browser using localStorage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section id="features" class="section features-section">
+      <div class="container">
+        <h2>Designed for focused productivity</h2>
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Smart organization</h3>
+            <p>
+              Categorize tasks by Work, Personal, Study, or anything else to
+              keep your day structured.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>See what matters</h3>
+            <p>
+              Priority levels, filters, and search help you focus on the next
+              important task.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Stay on schedule</h3>
+            <p>
+              Add due dates and quickly see how many tasks are due today at a
+              glance.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Light & dark modes</h3>
+            <p>
+              Switch themes with a single click. Your choice is saved for the
+              next visit.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 TaskNest. Advanced to-do app landing built in HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
