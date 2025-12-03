@@ -10,133 +10,75 @@ TaskNest combines a modern marketing landing page with a complete task managemen
 ✨ Features Overview
 📝 Task Management
 
-Add tasks with:
+1.Add tasks with:
 
-Title
+  * Title
 
-Category (Work / Personal / Study / Other)
+  * Category (Work / Personal / Study / Other)
 
-Priority (Low / Medium / High)
+  * Priority (Low / Medium / High)
 
-Optional due date
+  * Optional due date
 
-Mark tasks as completed
+* Mark tasks as completed
 
-Delete tasks
+* Delete tasks
 
-Clear all completed tasks with one click
+* Clear all completed tasks with one click
+  
 
-🔍 Smart Controls
+2. 🔍 Smart Controls
 
-Filters: All, Active, Completed
+  * Filters: All, Active, Completed
 
-Live Search: Instant text filtering
+  * Live Search: Instant text filtering
 
-Sorting Options:
+  * Sorting Options:
 
-Newest
+    1. Newest
 
-Oldest
+    2. Oldest
 
-Due Date
+    3. Due Date
 
-Priority
+    4. Priority
 
-Task Stats:
+  * Task Stats:
 
-Total tasks
+    1. Total tasks
 
-Completed percentage
+    2. Completed percentage
 
-Tasks due today
+    3. Tasks due today
+       
 
-🌙 Light & Dark Mode
+3. 🌙 Light & Dark Mode
 
-Simple toggle from header
+    * Simple toggle from header
 
-Theme preference saved in localStorage
+    * Theme preference saved in localStorage
 
-💾 Persistent Storage
+4. 💾 Persistent Storage
 
-All tasks saved using localStorage
+    * All tasks saved using localStorage
 
-Data remains after refresh or browser restart
+    * Data remains after refresh or browser restart
 
-📱 Responsive Design
+5. 📱 Responsive Design
 
-Built with:
+*  Built with:
 
-CSS Grid
+    1. CSS Grid
 
-Flexbox
+    2. Flexbox
 
-Mobile-first approach
+    3. Mobile-first approach
 
-Breakpoints for desktop → tablet → mobile
+    4. Breakpoints for desktop → tablet → mobile
 
-🧪 Tech Stack
-Technology	Purpose
-HTML5	Structure & semantics
-CSS3	Layout, responsiveness, theming
-JavaScript (ES6+)	App logic, interactions, state management
-localStorage	Data persistence
-No frameworks	Pure front-end project
-📸 Screenshots
-
-Replace each placeholder with actual screenshots later.
-
-⭐ Hero Section
-
-Add screenshot here
-
-🧩 Task Creation UI
-
-Add screenshot here
-
-🔍 Filters, Search & Sort
-
-Add screenshot here
-
-📊 Stats & Insights
-
-Add screenshot here
-
-🌗 Light / Dark Mode
-
-Add screenshot here
-
-📱 Mobile Responsive Layout
-
-Add screenshot here
-
-🧠 How It Works
-📌 Task Structure
-{
-  id: string,
-  text: string,
-  category: string,
-  priority: string,
-  dueDate: string,
-  completed: boolean,
-  createdAt: number
-}
-
-🔄 Rendering Pipeline
-
-Load tasks from localStorage
-
-Apply filters, search, and sorting
-
-Re-render the list using JavaScript DOM creation
-
-Update stats
-
-Save updated tasks in localStorage
-
-🌓 Theme Handling
-
-Adds or removes theme-dark class on <body>
-
-Saves preference in localStorage
-
-Restores theme on every page load
+6. Technology
+   1. HTML
+   2. CSS
+   3. JAVASCRIPT(ES6+)
+   4. localStorage
+   5. No frameworks
