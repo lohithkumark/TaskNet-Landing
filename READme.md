@@ -5,7 +5,7 @@ TaskNest combines a modern marketing landing page with a complete task managemen
 
 🚀 Live Demo
 
-🔗 Add your deployment link here (Vercel / GitHub Pages).
+🔗 (https://github.com/lohithkumark/TaskNet-Landing/)
 
 ✨ Features Overview
 📝 Task Management
